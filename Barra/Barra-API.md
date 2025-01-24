@@ -1,6 +1,6 @@
 # Barra API Automation
 
-Documentation of [Barra-API](https://github.com/matthegaam/Barra-API)
+Documentation of Project [Barra-API](https://github.com/matthegaam/Barra-API).
 
 ## Table of Contents
 + [About](#about)
