@@ -6,6 +6,7 @@ Documentation of Project [Barra-Model](https://github.com/matthegaam/Barra-Model
 + [About](#about)
 + [Getting Started](#getting_started)
 + [Usage](#usage)
++ [Contributors](#contributors)
 
 ## About <a name = "about"></a>
 Customize & reproduce MSCI Barra Portfolio Manager reports using model flat files. 
@@ -29,3 +30,7 @@ End with an example of getting some data out of the system or using it for a lit
 ## Usage <a name = "usage"></a>
 
 Add notes about how to use the system.
+
+## Contributors <a name = "contributors"></a>
+
+[**Matt He**](mailto:ziyanghe@gaamhk.com)
