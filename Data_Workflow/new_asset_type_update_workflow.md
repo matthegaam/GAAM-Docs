@@ -60,8 +60,6 @@ Documentation of workflow: updating new asset type into multiple systems.
    1. Get data from downloaded trade file
    2. separate and return the data into preprocessed dfs by `asset_type`
 
-
-
 ## Usage <a name = "usage"></a>
 ### Task Steps
 1. Manual create a table on database with the new asset type (if needed)
@@ -70,10 +68,10 @@ Documentation of workflow: updating new asset type into multiple systems.
 4. Edit the query in `asset_linedata_updater` to map its underlying with its unique identifier
 5. Update the modeling way in `MSCI_API_to_BPM` if needed
 ## Debugging Tips <a name = "debugging_tips"></a>
-### Common Errors
+No
 
 ## Log file location
-### Common Errors
+No
 
 ## Contributors<a name = "contributors"></a>
 [**Michael Ng**](mailto:mikeng@gaamhk.com)
