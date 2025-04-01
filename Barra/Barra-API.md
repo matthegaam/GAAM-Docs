@@ -5,17 +5,17 @@ Documentation of Project [Barra-API](https://github.com/matthegaam/Barra-API).
 ## Table of Contents
 
 + [About](#about)
-+ [Getting Started](#getting_started)
++ [Getting Started](#getting-started)
 + [Usage](#usage)
     + [Import](#import)
-    + [Export](#export-a-name--exporta)
+    + [Export](#export)
 + [Contributors](#contributors)
 
-## About <a name = "about"></a>
+## About
 
 Utilize MSCI Barra Portfolio Manager API for automation.
 
-## Getting Started <a name = "getting_started"></a>
+## Getting Started
 
 ### Prerequisites
 
@@ -33,18 +33,37 @@ pip install -r requirements.txt
 pip install msci.bdt-1.4.0-py3-none-any.whl
 ```
 
-## Usage <a name = "usage"></a>
+## Usage
 
 ### `Import`
+
+```shell
+python ./import/main.py {start_date} {end_date} -p {portfolio} [-pri] [-pos] [-mod]
+```
 
 Scripts for importing data from database to Barra Portfolio Manager using Barra API. The importing process include
 following steps:
 
-1. **Future Modelling** (Optional):
-2. **Position Uploading**
-3. **Price Uploading**
+1. **Future Modelling** (Optional): `-mod`/`--future_modeling`
+    + Construct future on Barra Portfolio Manager using Bloomberg future ID (e.g., 2330=X4 TT Equity) as identifier.
+    + Set default as `False`.
+2. **Position Uploading**: `-pos`/`--update_position`
+    + Upload unit prices for user defined data, i.e., future, composite(index).
+    + Set default as `False`.
+3. **Price Uploading**: `-pri`/`--update_price`
+    + Upload positions for all holding assets.
+    + Set default as `False`.
 
 ### `Export`
+
+Scripts for exporting reports from Barra Portfolio Manager using Barra API. The exporting process
+
+1. `load_report`
+    + `load_risk_report`: Download single-day risk snapshot reports and store it as `csv` in the `output` folder (Fast).
+    + `load_pa_report`: Download time-period portfolio analytics time-series reports and store it as `csv` in the
+      `output` folder (**Usually slow**, depending on the timespan of time-series).
+2. `process_report` (Optional):
+    + `process_sa`: Add `MacIssuer` and `Bloomberg` info to single asset reports.
 
 ## Contributors
 
