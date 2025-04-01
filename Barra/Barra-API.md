@@ -59,11 +59,12 @@ following steps:
 Scripts for exporting reports from Barra Portfolio Manager using Barra API. The exporting process
 
 1. `load_report`
-    + `load_risk_report`: Download single-day risk snapshot reports and store it as `csv` in the `output` folder (Fast).
-    + `load_pa_report`: Download time-period portfolio analytics time-series reports and store it as `csv` in the
+    + `load_risk_report`: Download **one** risk snapshot report per run and store it as `csv` in the `output` folder (
+      Fast).
+    + `load_pa_report`: Download **multiple** portfolio analytics time-series reports and store them as `csv` in the
       `output` folder (**Usually slow**, depending on the timespan of time-series).
-2. `process_report` (Optional):
-    + `process_sa`: Add `MacIssuer` and `Bloomberg` info to single asset reports.
+2. `process_report` (Optional)
+    + `process_sa`: Add MAC Issuer ID/Name and Bloomberg ticker to asset reports.
 
 ## Contributors
 
