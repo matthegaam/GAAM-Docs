@@ -56,11 +56,11 @@ following steps:
 
 ### `Export`
 
-Scripts for exporting reports from Barra Portfolio Manager using Barra API. The exporting process
+Scripts for exporting reports from Barra Portfolio Manager using Barra API.
 
 1. `load_report`
-    + `load_risk_report`: Download **one** risk snapshot report per run and store it as `csv` in the `output` folder (
-      Fast).
+    + `load_risk_report`: Download **one** risk snapshot report per run and store it as `csv` in the `output` folder
+      (Fast).
     + `load_pa_report`: Download **multiple** portfolio analytics time-series reports and store them as `csv` in the
       `output` folder (**Usually slow**, depending on the timespan of time-series).
 2. `process_report` (Optional)
