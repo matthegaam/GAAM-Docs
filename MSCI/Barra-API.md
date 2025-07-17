@@ -38,7 +38,7 @@ pip install msci.bdt-1.4.0-py3-none-any.whl
 ### `Import`
 
 ```shell
-python ./import/main.py {start_date} {end_date} -p {portfolio} [-pri] [-pos] [-mod]
+python ./import/main.py [-s {start_date}] [-e {end_date}] [-p {portfolio}] [-pri] [-pos] [-mod]
 ```
 
 Scripts for importing data from database to Barra Portfolio Manager using Barra API. The importing process include
